@@ -1,0 +1,5 @@
+Authentication is considered important, as it serves as the gateway to the functionality that is sought to be protected. Once a user is authenticated, their requests are granted authorization to interact with the application at some level, a privilege that unauthenticated users are deprived of. You have limited control over how users manage their authentication information or tokens, but you can ensure that there is no way to access application functions without proper authentication.
+
+There are a variety of forms of authentication, with passwords being the most common. Other methods include client certificates, biometrics, one-time passwords via SMS or special devices, and authentication frameworks such as Open Authorization (OAUTH) or Single Sign-On (SSO).
+
+Authentication typically occurs only once, when the user logs in to a website. Successful authentication results in the creation of a web session for the user. Later, if the user attempts to perform a high-risk function, such as transferring money, they may be prompted for additional authentication, which may be more robust.
