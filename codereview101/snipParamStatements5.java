@@ -1,4 +1,3 @@
-
 public class SQLConnection {
     public static void main(String[] args) {
         String userInput = "'; DROP TABLE users; --";
