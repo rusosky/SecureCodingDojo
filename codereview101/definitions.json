@@ -36,7 +36,7 @@
                     "snipParamStatements6.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a Prepared Statement which does not allow to execute the malicious string.",
+                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a Prepared Statement which does not allow the execution of the malicious string.",
                 "incorrectReasoning": "Incorrect! The sample is concatenating the input to the SQL Statement which executes a malicious string"
             },
             {
@@ -64,6 +64,19 @@
                 "answer":0,
                 "correctReasoning":"You're right! The code sample uses correctly a function to prevent an OS COMMAND INJECTION at the execution level.",
                 "incorrectReasoning": "Incorrect! The sample is actually concatenating the input to command at the execution level and can be dangerous."
+            },
+            {
+                "questionId":"paramStatements.q4",
+                "language":"java",
+                "lineToHighlight":6,
+                "question":"Which of the following code snippets prevents a SQL INJECTION?",
+                "snippets":[
+                    "snipParamStatements11.java",
+                    "snipParamStatements12.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a Prepared Statement which does not allow the execution of the malicious string.",
+                "incorrectReasoning": "Incorrect! The sample is concatenating the input to the SQL Statement which executes a malicious string."
             }
         ]
 
