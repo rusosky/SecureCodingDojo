@@ -29,7 +29,7 @@
             {
                 "questionId":"paramStatements.q1",
                 "language":"java",
-                "lineToHighlight":6,
+                "lineToHighlight":7,
                 "question":"Which of the following code snippets prevents a SQL INJECTION?",
                 "snippets":[
                     "snipParamStatements5.java",
