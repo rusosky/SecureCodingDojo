@@ -83,6 +83,67 @@
     },
 
     {
+        "categoryId":"codereview101_brokenAuthentication",
+        "categoryName":"Broken authentication and Session management",
+        "categoryDetails":"categoryBrokenAuthentication.md",
+        "questions":[
+            {
+                "questionId":"brokenAuthentication.q1",
+                "language":"java",
+                "lineToHighlight":4,
+                "question":"Which of the following code snippets is the secure way to authenticate a user password?",
+                "snippets":[
+                    "snipBrokenAuth1.java",
+                    "snipBrokenAuth2.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample is the right way to authenticate the user password in a code.",
+                "incorrectReasoning": "Incorrect! The sample is using a plain text password for comparison, which is insecure!."
+            },
+            {
+                "questionId":"brokenAuthentication.q2",
+                "language":"java",
+                "lineToHighlight":4,
+                "question":"Which of the following code snippets creates a secure session token?",
+                "snippets":[
+                    "snipBrokenAuth3.java",
+                    "snipBrokenAuth4.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample creates a secure session token using a random function for it!.",
+                "incorrectReasoning": "Incorrect! The code sample uses the username as part of the session token without any other random info!."
+            },
+            {
+                "questionId":"brokenAuthentication.q3",
+                "language":"java",
+                "lineToHighlight":4,
+                "question":"Which of the following code snippets is an insecure way to authenticate a user?",
+                "snippets":[
+                    "snipBrokenAuth5.java",
+                    "snipBrokenAuth6.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample uses plain text comparison of the user's stored password for comparison",
+                "incorrectReasoning": "Incorrect! The sample is actually comparing user's stored and hashed password against a hashed password of the input string!."
+            },
+            {
+                "questionId":"brokenAuthentication.q4",
+                "language":"java",
+                "lineToHighlight":4,
+                "question":"Which of the following code snippets uses a secure session token?",
+                "snippets":[
+                    "snipBrokenAuth7.java",
+                    "snipBrokenAuth8.java"
+                ],
+                "answer":1,
+                "correctReasoning":"You're right! The code sample creates a secure session token using a random function for it!.",
+                "incorrectReasoning": "Incorrect! The code sample uses some random info for the session but does not have any review of the expiration time ."
+            }
+        ]
+
+    },
+
+    {
         "categoryId":"codereview101_memory",
         "categoryName":"Memory Best Practices",
         "categoryDetails":"categoryMemory.md",
