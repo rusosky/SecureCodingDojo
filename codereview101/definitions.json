@@ -42,7 +42,7 @@
             {
                 "questionId":"paramStatements.q2",
                 "language":"java",
-                "lineToHighlight":6,
+                "lineToHighlight":9,
                 "question":"Which of the following code snippets allows an OS COMMAND INJECTION?",
                 "snippets":[
                     "snipParamStatements7.java",
