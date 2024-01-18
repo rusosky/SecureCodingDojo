@@ -30,17 +30,30 @@
                 "questionId":"paramStatements.q1",
                 "language":"java",
                 "lineToHighlight":6,
-                "question":"Which of the following code snippets prevents a Command Injection attack?",
+                "question":"Which of the following code snippets prevents a SQL INJECTION?",
                 "snippets":[
                     "snipParamStatements5.java",
                     "snipParamStatements6.java"
                 ],
                 "answer":0,
-                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a parameterized command object.",
-                "incorrectReasoning": "Incorrect! The sample is concatenating the input to the OS command."
+                "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a Prepared Statement which does not allow to execute the malicious string.",
+                "incorrectReasoning": "Incorrect! The sample is concatenating the input to the SQL Statement which executes a malicious string"
             },
             {
                 "questionId":"paramStatements.q2",
+                "language":"java",
+                "lineToHighlight":6,
+                "question":"Which of the following code snippets allows an OS COMMAND INJECTION",
+                "snippets":[
+                    "snipParamStatements7.java",
+                    "snipParamStatements8.java"
+                ],
+                "answer":0,
+                "correctReasoning":"You're right! The code sample allows an OS Command Injection because it executes the string directly in the OS which can be dangerous!.",
+                "incorrectReasoning": "Incorrect! The code sample uses correctly a function (ProcessBuilder) to limit the input string of the user at the execution level."
+            },
+            {
+                "questionId":"paramStatements.q3",
                 "language":"java",
                 "lineToHighlight":2,
                 "question":"Which of the following code snippets prevents SQL Injection?",
