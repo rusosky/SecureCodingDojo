@@ -32,8 +32,8 @@
                 "lineToHighlight":6,
                 "question":"Which of the following code snippets prevents a Command Injection attack?",
                 "snippets":[
-                    "snipParamStatements1.java",
-                    "snipParamStatements2.java"
+                    "snipParamStatements5.java",
+                    "snipParamStatements6.java"
                 ],
                 "answer":0,
                 "correctReasoning":"You're right! The code sample is preventing a vulnerability by using a parameterized command object.",
