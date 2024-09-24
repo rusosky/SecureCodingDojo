@@ -23,7 +23,7 @@ services:
     ports:
       - "8081:8081"
     volumes:
-       - "${DATA_DIR}:/dojofiles:consistent"
+       - "/opt/SecureCodingDojo:/dojofiles:consistent"
     networks:
        - portal
     environment:
